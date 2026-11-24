@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сказка для Родиона</title>
+    <link href="dflip/css/dflip.min.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #2c3e50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .book-container {
+            width: 100%;
+            max-width: 1000px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-container">
+        <!-- Добавили параметр title, чтобы название отображалось в интерфейсе книги -->
+        <div class="_df_book" source="album.pdf" id="flipbook" webgl="true" title="Сказка для Родиона"></div>
+    </div>
+
+    <script src="dflip/js/libs/jquery.min.js" type="text/javascript"></script>
+    <script src="dflip/js/dflip.min.js" type="text/javascript"></script>
+
+</body>
+</html>
